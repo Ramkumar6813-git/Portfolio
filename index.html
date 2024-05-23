@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="index.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <script src="index.js" defer></script>
+    <script
+      src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"
+      defer
+    ></script>
+    <title>Portfolio</title>
+  </head>
+  <body>
+    <div class="bg-container">
+      <nav class="navbar navbar-expand-md bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">RAMKUMAR</a>
+          <input
+            type="checkbox"
+            id="checkbox"
+            class="d-none me-auto"
+            placeholder="."
+          />
+          <label
+            for="checkbox"
+            class="navbar-toggler nav-icon d-md-none d-flex flex-column justify-content-between border-0"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+          >
+            <span class="rounded-pill bg-secondary bar bar1"></span>
+            <span class="rounded-pill bg-secondary bar bar2"></span>
+            <span class="rounded-pill bg-secondary bar bar3"></span>
+          </label>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-lg-0 text-end">
+              <li class="nav-item">
+                <a
+                  class="nav-link py-3 py-md-2 px-2"
+                  aria-current="page"
+                  href="#myProfile"
+                  active
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link py-3 py-md-2 px-2" href="#aboutMe">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link py-3 py-md-2 px-2" href="#myProjects"
+                  >Projects</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link py-3 py-md-2 px-2" href="#contact"
+                  >Contact</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <div class="content-section">
+        <section id="myProfile" class="profile-section container">
+          <div class="row">
+            <div
+              class="col-12 col-md-6 d-flex justify-content-center align-items-center mt-md-4"
+            >
+              <img
+                src="https://res.cloudinary.com/dtkpydgtx/image/upload/v1716445458/myProfile.jpg"
+                class="rounded-circle profile-image shadow-lg"
+                alt="profile"
+              />
+            </div>
+            <div
+              class="col-12 col-md-6 d-flex flex-column justify-content-center align-items-center text-center text-md-start py-2"
+            >
+              <div class="container profile-details">
+                <h1
+                  class="head-text fw-bolder pt-3 py-3 text-white animate__animated animate__bounce animate__delay-0.5s"
+                >
+                  Hey, My name is Ramkumar
+                </h1>
+                <p
+                  class="text fs-5 text-light animate__animated animate__bounceInUp animate__delay-0.6s"
+                >
+                  An aspirant Full Stack Web Developer and Trainee At NXT Wave
+                  Academy.
+                </p>
+                <button class="nav-link-button px-4 py-2">
+                  <a
+                    href="#myProjects"
+                    class="fs-4 text-white text-decoration-none"
+                    >Projects</a
+                  >
+                </button>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section
+          id="aboutMe"
+          class="container-fluid bg-white d-flex flex-column flex-md-row about-section"
+        >
+          <div class="row px-3">
+            <div class="col-12 col-md-6 d-flex flex-column text-center sub-div">
+              <h1 class="text-uppercase fw-bold heading-text about-head">
+                About me
+              </h1>
+              <p class="description text-muted pt-4 text-center about-text">
+                Hey It's Ramkumar, a passionate Web Developer with a keen
+                interest in creating and building engaging, user-friendly
+                Responsive Frontend Web Applications by using various frontend
+                technologies like React JS, Redux, and TailwindCss that provide
+                seamless user experiences across all devices.
+              </p>
+            </div>
+            <div
+              class="col-12 col-md-6 d-flex flex-column justify-content-center align-items-center text-center sub-div"
+            >
+              <h1
+                class="fw-bold text-uppercase heading-text mt-4 mt-md-0 skills-head"
+              >
+                My Skills
+              </h1>
+              <ul
+                class="list-group d-flex flex-row flex-wrap justify-content-center pt-4 skills"
+              >
+                <li class="list-item">HTML</li>
+                <li class="list-item">CSS</li>
+                <li class="list-item">JAVASCRIPT</li>
+                <li class="list-item">EXPRESS JS</li>
+                <li class="list-item">NODE JS</li>
+                <li class="list-item">SQLITE</li>
+                <li class="list-item">MONGO DB</li>
+                <li class="list-item">PYTHON</li>
+                <br />
+                <li class="list-item bg-info-subtle bg-gradient bg-opacity-50">
+                  REACT JS
+                </li>
+                <li class="list-item bg-info-subtle bg-gradient bg-opacity-50">
+                  REDUX
+                </li>
+                <li class="list-item bg-info-subtle bg-gradient">BOOTSTRAP</li>
+                <li class="list-item bg-info-subtle bg-gradient">
+                  TAILWINDCSS
+                </li>
+                <li
+                  class="list-item bg-primary-subtle bg-gradient bg-opacity-50"
+                >
+                  FIREBASE
+                </li>
+                <li
+                  class="list-item bg-primary-subtle bg-gradient bg-opacity-50"
+                >
+                  GIT
+                </li>
+                <li
+                  class="list-item bg-primary-subtle bg-gradient bg-opacity-50"
+                >
+                  GITHUB
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+        <section
+          id="myProjects"
+          class="container-fluid d-flex flex-column justify-content-center align-items-center bg-body-tertiary projects-section"
+        >
+          <h1 class="text-uppercase fw-bold heading-text">Projects</h1>
+          <div
+            class="col-12 projects containerfluid d-flex flex-column justify-content-center align-items-center mt-4 pt-md-4"
+          >
+            <div
+              class="project container project d-flex flex-column justify-content-center flex-md-row align-items-center py-3 mb-5"
+            >
+              <img
+                src="https://res.cloudinary.com/dtkpydgtx/image/upload/v1705673955/jobbyApp-design.png"
+                alt="thumbnail"
+                class="img-fluid thumbnail"
+              />
+              <div
+                class="d-flex flex-column justify-content-center text-center text-md-start px-md-3"
+              >
+                <h3 class="project-name text-uppercase pt-4 pt-md-0">
+                  Jobby App
+                </h3>
+                <p class="my-2 o-0">
+                  user:- <mark>rahul</mark> -- pwd:- <mark>rahul@2021</mark>
+                </p>
+                <p class="project-description text-muted">
+                  A Job Search web application created using React Js that is
+                  fast,responsive,and interactive. Implemented Navigation
+                  bewteeen different components using React Router package and
+                  more...
+                </p>
+                <div
+                  class="d-flex justify-content-evenly justify-content-md-start align-items-center"
+                >
+                  <button
+                    type="button"
+                    class="px-5 py-2 border-0 rounded web-button demo left"
+                  >
+                    <a
+                      href="https://reactjsjobbyapp.ccbp.tech/login"
+                      class="web-link text-decoration-none text-white"
+                      >Live</a
+                    >
+                  </button>
+                  <button
+                    type="button"
+                    class="px-5 py-2 border-0 rounded web-button code"
+                  >
+                    <a href="#" class="web-link text-decoration-none text-white"
+                      >Code</a
+                    >
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div
+              class="project container project d-flex flex-column justify-content-center flex-md-row align-items-center py-2 mb-5"
+            >
+              <img
+                src="https://res.cloudinary.com/dtkpydgtx/image/upload/v1705675931/Emoji.png"
+                alt="thumbnail"
+                class="img-fluid thumbnail"
+              />
+              <div
+                class="d-flex flex-column justify-content-center text-center text-md-start px-md-3"
+              >
+                <h3 class="project-name text-uppercase pt-4 pt-md-0">
+                  Emoji Game
+                </h3>
+                <p class="project-description text-muted">
+                  The Project is an emoji game that challenges the user to click
+                  on different emojis without repeating any. Used state
+                  management to keep track of users score, the clicked emojis,
+                  and game status and more...
+                </p>
+                <div
+                  class="d-flex justify-content-evenly justify-content-md-start align-items-center"
+                >
+                  <button
+                    type="button"
+                    class="px-5 py-2 border-0 rounded web-button demo left"
+                  >
+                    <a
+                      href="https://ramsemojigame.ccbp.tech/"
+                      class="web-link text-decoration-none text-white"
+                      >Live</a
+                    >
+                  </button>
+                  <button
+                    type="button"
+                    class="px-5 py-2 border-0 rounded web-button code"
+                  >
+                    <a href="#" class="web-link text-decoration-none text-white"
+                      >Code</a
+                    >
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div
+              class="project container project d-flex flex-column justify-content-center flex-md-row align-items-center py-2 mb-5"
+            >
+              <img
+                src="https://res.cloudinary.com/dtkpydgtx/image/upload/v1705737080/bookhub.jpg"
+                alt="thumbnail"
+                class="img-fluid thumbnail"
+              />
+              <div
+                class="d-flex flex-column justify-content-center text-center text-md-start px-md-3"
+              >
+                <h3 class="project-name text-uppercase pt-4 pt-md-0">
+                  Bookhub
+                </h3>
+                <p class="my-2 o-0">
+                  user:- <mark>rahul</mark> -- pwd:- <mark>rahul@2021</mark>
+                </p>
+                <p class="project-description text-muted">
+                  This Project is a Bookhub web application that allows users to
+                  browse,search,and read books from various genres and
+                  categories. Implimented book slider using React Slider Package
+                  and theme using Theme Context.
+                </p>
+                <div
+                  class="d-flex justify-content-evenly justify-content-md-start align-items-center"
+                >
+                  <button
+                    type="button"
+                    class="px-5 py-2 border-0 rounded web-button demo left"
+                  >
+                    <a
+                      href="https://bookhubsite.ccbp.tech/login"
+                      class="web-link text-decoration-none text-white"
+                      >Live</a
+                    >
+                  </button>
+                  <button
+                    type="button"
+                    class="px-5 py-2 border-0 rounded web-button code"
+                  >
+                    <a href="#" class="web-link text-decoration-none text-white"
+                      >Code</a
+                    >
+                  </button>
+                </div>
+              </div>
+            </div>
+            <a
+              href="https://github.com/Ramkumar6813-git"
+              class="explore-link"
+              target="_blank"
+            >
+              Explore More
+              <span class="px-1"><i class="bi bi-box-arrow-up-right"></i></span>
+            </a>
+          </div>
+        </section>
+        <section
+          id="contact"
+          class="container-fluid d-flex flex-column justify-content-center contact-section"
+        >
+          <h1 class="text-center mb-5 pb-2 text-white heading-text">
+            Contact Me
+          </h1>
+          <form class="contact-form bg-white rounded d-flex flex-column">
+            <div class="mb-3 mt-3">
+              <label for="name" class="form-label">Name:</label>
+              <input
+                type="text"
+                class="form-control bg-body-tertiary"
+                id="name"
+                placeholder="Enter Your Name"
+                name="name"
+                required
+                autocomplete="off"
+              />
+              <span class="error name-error"></span>
+            </div>
+            <div class="mb-3">
+              <label for="email" class="form-label">Email:</label>
+              <input
+                type="email"
+                class="form-control bg-body-tertiary"
+                id="email"
+                placeholder="Enter Yout Email"
+                name="email"
+                required
+                autocomplete="off"
+              />
+              <span class="error email-error"></span>
+            </div>
+            <div class="mb-3">
+              <label for="message" class="form-label">Message</label>
+              <textarea
+                class="form-control bg-body-tertiary"
+                rows="6"
+                id="message"
+                name="text"
+                placeholder="Your Message"
+                required
+                autocomplete="off"
+              ></textarea>
+              <span class="error msg-error"></span>
+            </div>
+            <button type="submit" class="btn btn-primary align-self-end">
+              Submit
+            </button>
+          </form>
+        </section>
+      </div>
+      <footer
+        class="bg-dark text-white d-flex flex-column justify-content-center align-items-center text-center pt-4 pb-1 footer"
+      >
+        <div class="social-media">
+          <h3 class="text-white text-uppercase fw-bold py-1">Social</h3>
+          <ul class="media-links">
+            <li class="link-item">
+              <a
+                href="https://mail.google.com/mail/u/1/?view=cm&fs=1&to=ramkumar.dev9869@gmail.com&tf=1"
+                traget="_blank"
+                ><i class="media bi bi-envelope-fill"></i
+              ></a>
+            </li>
+            <li class="link-item">
+              <a href="https://twitter.com/Ramkumar6813" traget="_blank"
+                ><i class="media bi bi-twitter"></i
+              ></a>
+            </li>
+            <li class="link-item">
+              <a
+                href="https://www.linkedin.com/in/gadigeramkumar/"
+                traget="_blank"
+                ><i class="media bi bi-linkedin"></i
+              ></a>
+            </li>
+            <li class="link-item">
+              <a href="https://github.com/Ramkumar6813-git" traget="_blank"
+                ><i class="media bi bi-github"></i
+              ></a>
+            </li>
+          </ul>
+        </div>
+        <hr class="line my-0 mb-2" />
+        <div class="copyright">
+          <p class="m-0 text-light">
+            Made my
+            <strong class="text-decoration-underline">Ramkumar</strong>
+          </p>
+        </div>
+      </footer>
+    </div>
+    <script src="https://smtpjs.com/v3/smtp.js" async defer></script>
+  </body>
+</html>
